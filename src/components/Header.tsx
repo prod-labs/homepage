@@ -1,11 +1,11 @@
-import { Link } from '@tanstack/react-router'
+// import { Link } from '@tanstack/react-router'
 
 export default function Header() {
   return (
-    <header className="p-2 flex gap-2 bg-white text-black justify-between">
+    <header className="flex gap-2 fixed top-0 left-0 right-0 justify-between py-5 lg:px-24 max-lg:px-12 z-20">
       <nav className="flex flex-row">
-        <div className="px-2 font-bold">
-          <Link to="/">Home</Link>
+        <div className="p-2 px-4 rounded-xl bg-background">
+          <h1 className="font-heading text-3xl lg:text-5xl">prodlabs.io</h1>
         </div>
       </nav>
     </header>
