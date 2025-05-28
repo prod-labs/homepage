@@ -31,6 +31,13 @@ if (rootElement && !rootElement.innerHTML) {
   const root = ReactDOM.createRoot(rootElement)
   root.render(
     <StrictMode>
+      <head>
+        <link
+          href="https://api.fontshare.com/v2/css?f[]=general-sans@500,600,700&display=swap"
+          rel="stylesheet"
+        />
+        
+      </head>
       <RouterProvider router={router} />
     </StrictMode>,
   )
