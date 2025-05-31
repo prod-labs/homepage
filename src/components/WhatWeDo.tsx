@@ -67,7 +67,7 @@ export default function WhatWeDo() {
               once: false,
               amount: 0.9,
             }}
-            className="flex flex-col items-center gap-6 bg-background z-10 h-fit p-2 py-4 w-full"
+            className="flex flex-col items-center gap-6 ackground z-10 h-fit p-2 py-4 w-full"
           >
             <div className="flex flex-col items-start md:items-start gap-2 max-w-xl w-full px-4">
               <h2 className="font-semibold text-2xl md:text-3xl flex items-center gap-2">
@@ -109,7 +109,7 @@ export default function WhatWeDo() {
               once: false,
               amount: 0.9,
             }}
-            className="flex flex-col items-center gap-6 bg-background z-10 h-fit p-2 py-4 w-full"
+            className="flex flex-col items-center gap-6 ackground z-10 h-fit p-2 py-4 w-full"
           >
             <div className="flex flex-col items-start md:items-start gap-2 max-w-xl w-full px-4">
               <h2 className="font-semibold text-2xl md:text-3xl flex items-center gap-2">
@@ -151,7 +151,7 @@ export default function WhatWeDo() {
               once: false,
               amount: 0.9,
             }}
-            className="flex flex-col items-center gap-6 bg-background z-10 h-fit p-2 py-4 w-full"
+            className="flex flex-col items-center gap-6 ackground z-10 h-fit p-2 py-4 w-full"
           >
             <div className="flex flex-col items-start md:items-start gap-2 max-w-xl w-full px-4">
               <h2 className="font-semibold text-2xl md:text-3xl flex items-center gap-2">
@@ -193,7 +193,7 @@ export default function WhatWeDo() {
               once: false,
               amount: 0.9,
             }}
-            className="flex flex-col items-center gap-6 bg-background z-10 h-fit p-2 py-4 w-full"
+            className="flex flex-col items-center gap-6 ackground z-10 h-fit p-2 py-4 w-full"
           >
             <div className="flex flex-col items-start md:items-start gap-2 max-w-xl w-full px-4">
               <h2 className="font-semibold text-2xl md:text-3xl flex items-center gap-2">

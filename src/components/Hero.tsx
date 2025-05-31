@@ -3,14 +3,77 @@ import { motion } from 'motion/react'
 function Hero() {
   return (
     <>
+      <style>{`
+        @media (min-width: 1024px) {
+          .hero-gradient-shadow {
+            box-shadow: 
+              0 0 60px color-mix(in srgb, var(--color-red) 15%, transparent),
+              0 0 120px color-mix(in srgb, var(--color-orange) 10%, transparent),
+              0 0 180px color-mix(in srgb, var(--color-cyan) 8%, transparent),
+              0 0 240px color-mix(in srgb, var(--color-blue) 6%, transparent),
+              inset 0 0 40px color-mix(in srgb, var(--color-red) 5%, transparent);
+          }
+        }
+      `}</style>
       <motion.section
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.8, ease: 'easeOut', delay: 0.2 }}
         viewport={{ once: true, margin: '-100px' }}
-        className="min-h-screen lg:px-28 lg:pr-12 max-lg:px-12 overflow-hidden relative flex flex-col justify-center gap-32"
+        className="min-h-screen lg:px-28 lg:pr-12 max-lg:px-12 overflow-hidden relative flex flex-col justify-center gap-24 mb-24"
       >
-        <div className="flex max-lg:flex-col items-center max-lg:items-start max-lg:justify-end gap-12 lg:justify-between">
+        <div className="flex max-lg:flex-col lg:p-12 lg:mt-24 rounded-3xl lg:border-4 border-foreground items-center max-lg:items-start max-lg:justify-end gap-12 lg:justify-between relative hero-gradient-shadow">
+          <motion.div
+            animate={{
+              background: [
+                `linear-gradient(45deg, 
+                  color-mix(in srgb, var(--color-red) 30%, transparent), 
+                  color-mix(in srgb, var(--color-orange) 30%, transparent), 
+                  color-mix(in srgb, var(--color-cyan) 30%, transparent), 
+                  color-mix(in srgb, var(--color-blue) 30%, transparent)
+                )`,
+                `linear-gradient(135deg, 
+                  color-mix(in srgb, var(--color-orange) 30%, transparent), 
+                  color-mix(in srgb, var(--color-cyan) 30%, transparent), 
+                  color-mix(in srgb, var(--color-blue) 30%, transparent), 
+                  color-mix(in srgb, var(--color-red) 30%, transparent)
+                )`,
+                `linear-gradient(225deg, 
+                  color-mix(in srgb, var(--color-cyan) 30%, transparent), 
+                  color-mix(in srgb, var(--color-blue) 30%, transparent), 
+                  color-mix(in srgb, var(--color-red) 30%, transparent), 
+                  color-mix(in srgb, var(--color-orange) 30%, transparent)
+                )`,
+                `linear-gradient(315deg, 
+                  color-mix(in srgb, var(--color-blue) 30%, transparent), 
+                  color-mix(in srgb, var(--color-red) 30%, transparent), 
+                  color-mix(in srgb, var(--color-orange) 30%, transparent), 
+                  color-mix(in srgb, var(--color-cyan) 30%, transparent)
+                )`,
+                `linear-gradient(45deg, 
+                  color-mix(in srgb, var(--color-red) 30%, transparent), 
+                  color-mix(in srgb, var(--color-orange) 30%, transparent), 
+                  color-mix(in srgb, var(--color-cyan) 30%, transparent), 
+                  color-mix(in srgb, var(--color-blue) 30%, transparent)
+                )`,
+              ],
+            }}
+            transition={{
+              duration: 8,
+              repeat: Infinity,
+              ease: 'linear',
+            }}
+            className="absolute max-lg:hidden inset-0 rounded-3xl opacity-20 pointer-events-none"
+            style={{
+              mask: 'linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)',
+              maskComposite: 'xor',
+              WebkitMask:
+                'linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)',
+              WebkitMaskComposite: 'xor',
+              padding: '4px',
+            }}
+          />
+
           <div className="flex flex-col">
             <div className="relative my-4 mb-12">
               <motion.div
@@ -161,18 +224,6 @@ function Hero() {
               className="w-[300px] h-[120px] object-cover  rounded-full"
             />
             <div className="border-12 border-red w-[100px] h-[100px] rounded-3xl -rotate-45" />
-            {/* <motion.div
-              animate={{
-                rotate: [-45, 315],
-                height: ['5px', '100px', '5px'],
-              }}
-              transition={{
-                duration: 3,
-                repeat: Infinity,
-                ease: 'easeInOut',
-              }}
-              className="border-12 border-red w-[100px] rounded-3xl"
-            /> */}
           </div>
           <div className="rounded-3xl px-8 py-4 flex justify-center gap-2 flex-col min-w-[250px]  bg-foreground/20 text-foreground">
             <h2 className="text-4xl font-bold">17k+</h2>
