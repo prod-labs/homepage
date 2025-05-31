@@ -9,6 +9,7 @@ export default function WhatWeDo() {
   return (
     <>
       <div className="absolute w-screen h-[250vh] left-0 pointer-events-none blur-2xl">
+
         <div
           className="absolute top-0 bottom-0 left-0 w-48 backdrop-blur-sm"
           style={{
@@ -17,6 +18,7 @@ export default function WhatWeDo() {
           }}
         />
 
+        <div
           className="absolute top-0 bottom-0 right-0 w-48 backdrop-blur-sm"
           style={{
             background:
