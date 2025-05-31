@@ -1,6 +1,4 @@
 import React from 'react'
-import { motion } from 'motion/react'
-import { FaTrophy } from 'react-icons/fa'
 import { Card, Carousel } from './ui/AppleCards'
 
 const data = [
@@ -18,7 +16,7 @@ const data = [
     content:
       'From idea to App Store. We craft mobile apps users love to tap on.',
   },
-  { 
+  {
     src: '/mockups/design.png',
     title: 'UI Designing',
     category: 'Services',
