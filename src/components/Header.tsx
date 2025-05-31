@@ -4,13 +4,13 @@ import { Link } from '@tanstack/react-router'
 
 export default function Header() {
   return (
-    <header className="flex gap-2 fixed top-0 left-0 right-0 justify-between py-5 lg:px-24 max-lg:px-12 z-20 w-full">
+    <header className="flex gap-2 fixed top-0 left-0 right-0 justify-between py-2 lg:px-24 max-lg:px-12 z-20 w-full bg-background/70 backdrop-blur-2xl">
       <nav className="flex flex-row justify-between items-center w-full">
-        <div className="p-2 px-4  flex flex-row gap-3 items-center justify-center rounded-xl bg-background">
+        <div className="p-2 px-4  flex flex-row gap-3 items-center justify-center rounded-xl">
           <img src="/icon.svg" alt="Prodlabs" className="w-10 h-10" />
           <h1 className="font-heading text-2xl lg:text-3xl">prodlabs.io</h1>
         </div>
-        <div className="max-lg:hidden flex flex-row gap-8 *:font-semibold *:text-foreground/80 bg-background rounded-xl p-2 px-4">
+        <div className="max-lg:hidden flex flex-row gap-8 *:font-semibold *:text-foreground/80 rounded-xl p-2 px-4">
           <Link to="#why">Why Us</Link>
           <Link to="#services">Services</Link>
           <Link to="#testimonials">Testimonials</Link>

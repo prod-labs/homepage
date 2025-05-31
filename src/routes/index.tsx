@@ -23,7 +23,7 @@ function App() {
       <Pricing />
       <FAQ />
       <Footer />
-      <div className="transition-all duration-300 lg:w-[14px] max-lg:w-[4px] min-h-screen h-full fixed top-0 left-0 gradient z-0" />
+      <div className="transition-all duration-300 lg:w-[14px] max-lg:w-[4px] min-h-screen h-full fixed top-0 left-0 gradient z-20" />
     </main>
   )
 }

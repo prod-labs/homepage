@@ -86,7 +86,7 @@ function Footer() {
         whileInView="visible"
         viewport={{ once: true, amount: 0.2 }}
         variants={containerVariants}
-        className="flex flex-col gap-2 items-center  justify-center bg-foreground py-32 text-background overflow-hidden"
+        className="flex flex-col gap-2 items-center  justify-center bg-foreground py-28 text-background overflow-hidden"
       >
         <motion.h2 variants={itemVariants} className="text-3xl font-medium">
           Wanna build somethin&apos;?
@@ -105,7 +105,7 @@ function Footer() {
 
         <motion.div
           variants={containerVariants}
-          className="flex flex-wrap lg:px-24 max-lg:px-8 gap-4 mt-24 max-lg:mt-12 items-center justify-center"
+          className="flex flex-wrap lg:px-24 max-lg:px-8 gap-4 mt-16 max-lg:mt-12 items-center justify-center"
         >
           {[
             {

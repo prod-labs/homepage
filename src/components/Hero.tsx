@@ -1,93 +1,190 @@
-import { motion, useAnimationControls } from 'motion/react'
-import React, { useEffect } from 'react'
+import { motion } from 'motion/react'
 
 function Hero() {
-  const controls = useAnimationControls()
-
-  useEffect(() => {
-    let rotation = -90
-
-    const rotateNext = () => {
-      rotation = rotation + 90
-      controls
-        .start({
-          rotate: rotation,
-          transition: {
-            duration: 0.5,
-            ease: [0.645, 0.045, 0.355, 1],
-          },
-        })
-        .then(() => {
-          setTimeout(rotateNext, 2000)
-        })
-    }
-
-    rotateNext()
-
-    return () => {}
-  }, [controls])
-
   return (
-    <motion.section
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      transition={{ duration: 0.8, ease: 'easeOut', delay: 0.2 }}
-      viewport={{ once: true, margin: '-100px' }}
-      className="min-h-screen flex max-lg:flex-col lg:px-28 max-lg:px-12 items-center max-lg:items-start max-lg:justify-end lg:justify-start overflow-hidden"
-    >
-      <div className="flex flex-col gap-6">
-        <h1 className="text-3xl lg:text-[64px] font-semibold lg:leading-20">
-          We make your ideas
-          <br />
-          into <i className="underline">reality</i>
-        </h1>
-        <p className="opacity-70">
-          We build full-stack web and mobile apps that go live fast.
-          <br className="hidden lg:block" />
-          You can test, earn, and grow before anyone catches up.
-        </p>
-
-        <div className="overflow-hidden whitespace-nowrap relative lg:max-w-[65vw] max-lg:max-w-[90vw] lg:mt-24 max-lg:mt-12">
-          <motion.div
-            className="inline-flex gap-12 items-center"
-            animate={{ x: [0, '-50.6%'] }}
-            transition={{
-              duration: 8,
-              repeat: Infinity,
-              ease: 'linear',
-            }}
-          >
-            {[...Array(4)].map((_, i) => (
-              <div key={i} className="inline-flex gap-12 items-center">
-                <span className="text-xl font-medium opacity-40">Brand</span>
-                <span className="text-xl font-medium opacity-40">Logos</span>
-                <span className="text-xl font-medium opacity-40">Supposed</span>
-                <span className="text-xl font-medium opacity-40">To</span>
-                <span className="text-xl font-medium opacity-40">Be</span>
-                <span className="text-xl font-medium opacity-40">Here</span>
-                <span className="text-xl font-medium opacity-40">So</span>
-                <span className="text-xl font-medium opacity-40">We win</span>
+    <>
+      <motion.section
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.8, ease: 'easeOut', delay: 0.2 }}
+        viewport={{ once: true, margin: '-100px' }}
+        className="min-h-screen lg:px-28 lg:pr-12 max-lg:px-12 overflow-hidden relative flex flex-col justify-center gap-32"
+      >
+        <div className="flex max-lg:flex-col items-center max-lg:items-start max-lg:justify-end gap-12 lg:justify-between">
+          <div className="flex flex-col">
+            <div className="relative my-4 mb-12">
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, ease: 'easeOut', delay: 0.3 }}
+                viewport={{ once: true, margin: '-50px' }}
+                className="text-3xl uppercase flex flex-col lg:text-[72px] font-semibold lg:leading-24"
+              >
+                <div>
+                  <motion.span
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5, ease: 'easeOut', delay: 0.4 }}
+                    viewport={{ once: true, margin: '-50px' }}
+                    className="inline-block mr-4"
+                  >
+                    We
+                  </motion.span>
+                  <motion.span
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5, ease: 'easeOut', delay: 0.5 }}
+                    viewport={{ once: true, margin: '-50px' }}
+                    className="inline-block mr-4"
+                  >
+                    build
+                  </motion.span>
+                  <motion.span
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5, ease: 'easeOut', delay: 0.6 }}
+                    viewport={{ once: true, margin: '-50px' }}
+                    className="inline-block"
+                  >
+                    your
+                  </motion.span>
+                </div>
+                <div>
+                  <motion.span
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5, ease: 'easeOut', delay: 0.7 }}
+                    viewport={{ once: true, margin: '-50px' }}
+                    className="inline-block mr-4"
+                  >
+                    great
+                  </motion.span>
+                  <motion.span
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5, ease: 'easeOut', delay: 0.8 }}
+                    viewport={{ once: true, margin: '-50px' }}
+                    className="inline-block"
+                  >
+                    ideas
+                  </motion.span>
+                </div>
+                <div className="ml-32">
+                  <motion.span
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5, ease: 'easeOut', delay: 0.9 }}
+                    viewport={{ once: true, margin: '-50px' }}
+                    className="inline-block mr-4"
+                  >
+                    into
+                  </motion.span>
+                  <motion.span
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5, ease: 'easeOut', delay: 1 }}
+                    viewport={{ once: true, margin: '-50px' }}
+                    className="inline-block px-7 py-1 rounded-full border border-foreground"
+                  >
+                    reality
+                  </motion.span>
+                </div>
+              </motion.div>
+              <motion.p
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 0.7 }}
+                transition={{ duration: 0.6, ease: 'easeOut', delay: 0.6 }}
+                viewport={{ once: true, margin: '-50px' }}
+                className="font-heading absolute text-blue right-12 text-lg bottom-30 leading-4"
+              >
+                TOP RATED
+                <br />
+                AGENCY
+              </motion.p>
+              <motion.p
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 0.7 }}
+                transition={{ duration: 0.6, ease: 'easeOut', delay: 0.8 }}
+                viewport={{ once: true, margin: '-50px' }}
+                className="font-heading text-orange absolute left-12 text-lg bottom-6 leading-4"
+              >
+                PREMIUM
+                <br />
+                QUALITY
+              </motion.p>
+            </div>
+            <div className="flex flex-col gap-4 ml-24 mt-8">
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, ease: 'easeOut', delay: 1.2 }}
+                viewport={{ once: true, margin: '-50px' }}
+                className="text-lg"
+              >
+                OUR DEDICATED SERVICES PROMOTES THE RESPONSIBLE AND
+                <br />
+                PROGRESSIVE ADOPTION OF AI, ENSURING IT IS DONE ETHICALLY.
+              </motion.p>
+              <div className="flex flex-row gap-6">
+                <motion.button
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  transition={{ duration: 0.5, ease: 'easeOut', delay: 1.4 }}
+                  viewport={{ once: true, margin: '-50px' }}
+                  className="border border-foreground text-foreground px-6 py-3 rounded-full cursor-pointer  hover:scale-105 transition-all duration-300 ease-in-out w-fit font-thin text-xl"
+                >
+                  Learn more
+                </motion.button>
+                <motion.button
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  transition={{ duration: 0.5, ease: 'easeOut', delay: 1.5 }}
+                  viewport={{ once: true, margin: '-50px' }}
+                  className="bg-foreground text-background px-6 py-3 rounded-full cursor-pointer hover:scale-105 transition-all duration-300 ease-in-out w-fit font-thin text-xl"
+                >
+                  Book a call
+                </motion.button>
               </div>
-            ))}
-          </motion.div>
+            </div>
+          </div>
+          <img src="hero-cut.png" alt="hero" className="max-w-[700px] w-full" />
         </div>
-      </div>
-      <div className="lg:absolute max-lg:relative lg:-right-72 lg:top-0 flex items-center justify-center">
-        <motion.img
-          animate={controls}
-          src="diamond.svg"
-          alt="diamond"
-          className="lg:h-[100vh] max-lg:h-[50vh] relative z-0"
-        />
-        <motion.button
-          className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 bg-foreground text-2xl text-background border-12 border-background font-semibold cursor-pointer lg:px-12 lg:py-8 max-lg:px-8 max-lg:py-6 rounded-full whitespace-nowrap"
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-        >
-          Book a call
-        </motion.button>
-      </div>
-    </motion.section>
+        <div className="flex flex-row justify-between gap-32 px-12">
+          <div className="flex flex-row gap-12 items-center justify-center">
+            <img
+              src="/mockups/branding.png"
+              alt="mock"
+              className="w-[300px] h-[120px] object-cover  rounded-full"
+            />
+            <div className="border-12 border-red w-[100px] h-[100px] rounded-3xl -rotate-45" />
+            {/* <motion.div
+              animate={{
+                rotate: [-45, 315],
+                height: ['5px', '100px', '5px'],
+              }}
+              transition={{
+                duration: 3,
+                repeat: Infinity,
+                ease: 'easeInOut',
+              }}
+              className="border-12 border-red w-[100px] rounded-3xl"
+            /> */}
+          </div>
+          <div className="rounded-3xl px-8 py-4 flex justify-center gap-2 flex-col min-w-[250px]  bg-foreground/20 text-foreground">
+            <h2 className="text-4xl font-bold">17k+</h2>
+            <p className="text-lg">Customers</p>
+          </div>
+          <p className="max-w-[300px]">
+            We build full-stack web and mobile apps that go live fast. You can
+            test, earn, and grow before anyone catches up.
+          </p>
+        </div>
+      </motion.section>
+    </>
   )
 }
 

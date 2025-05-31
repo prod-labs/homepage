@@ -131,7 +131,7 @@ const TestimonialGrid = () => {
   return (
     <section
       id="testimonials"
-      className="min-h-screen lg:px-28 md:px-16 px-6 flex flex-col items-start py-10 md:py-18"
+      className="lg:px-28 md:px-16 px-6 flex flex-col items-start py-10 md:py-18"
     >
       <div className="flex flex-col items-start gap-2 mb-24">
         <h1 className="text-2xl md:text-4xl lg:text-[64px] font-semibold">
