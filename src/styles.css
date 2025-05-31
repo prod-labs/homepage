@@ -1,15 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
-@import "tailwindcss";
-@import "tw-animate-css";
-
-
+@import 'tailwindcss';
+@import 'tw-animate-css';
 
 :root {
-  --color-red: #F74460;
-  --color-orange: #FB7F34;
-  --color-cyan: #5DDFDE;
-  --color-blue: #5479E0;
-  --color-foreground: #FDF9F0;
+  --color-red: #f74460;
+  --color-orange: #fb7f34;
+  --color-cyan: #5ddfde;
+  --color-blue: #5479e0;
+  --color-foreground: #fdf9f0;
   --color-background: #141414;
   --radius: 0.625rem;
   --background: oklch(1 0 0);
@@ -46,14 +44,14 @@
 }
 
 @theme {
-  --font-display: "General Sans", "sans-serif";
-  --font-heading: "Jersey 10", "sans-serif";
+  --font-display: 'General Sans', 'sans-serif';
+  --font-heading: 'Jersey 10', 'sans-serif';
   --breakpoint-3xl: 1920px;
-  --color-red: #F74460;
-  --color-orange: #FB7F34;
-  --color-cyan: #5DDFDE;
-  --color-blue: #5479E0;
-  --color-foreground: #FDF9F0;
+  --color-red: #f74460;
+  --color-orange: #fb7f34;
+  --color-cyan: #5ddfde;
+  --color-blue: #5479e0;
+  --color-foreground: #fdf9f0;
   --color-background: #141414;
   --ease-fluid: cubic-bezier(0.3, 0, 0, 1);
   --ease-snappy: cubic-bezier(0.2, 0, 0, 1);
@@ -69,22 +67,24 @@ body {
   overflow-x: hidden;
 }
 
-html, body {
+html,
+body {
   overflow-x: hidden;
   scroll-behavior: smooth;
+  background-color: var(--color-background);
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  font-family:
+    source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
 .gradient {
-  background: linear-gradient(180deg, 
+  background: linear-gradient(
+    180deg,
     var(--color-red),
     var(--color-orange),
     var(--color-blue),
     var(--color-cyan)
   );
 }
-
