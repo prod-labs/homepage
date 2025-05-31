@@ -95,7 +95,7 @@ function Hero() {
                 whileInView={{ opacity: 0.7 }}
                 transition={{ duration: 0.6, ease: 'easeOut', delay: 0.6 }}
                 viewport={{ once: true, margin: '-50px' }}
-                className="font-heading absolute text-blue right-12 text-lg bottom-30 leading-4"
+                className="font-heading absolute text-blue right-12 text-lg max-lg:bottom-20 bottom-30 leading-4"
               >
                 TOP RATED
                 <br />
@@ -106,23 +106,23 @@ function Hero() {
                 whileInView={{ opacity: 0.7 }}
                 transition={{ duration: 0.6, ease: 'easeOut', delay: 0.8 }}
                 viewport={{ once: true, margin: '-50px' }}
-                className="font-heading text-orange absolute left-12 text-lg bottom-6 leading-4"
+                className="font-heading text-orange absolute left-12 max-lg:bottom-0 text-lg bottom-6 leading-4"
               >
                 PREMIUM
                 <br />
                 QUALITY
               </motion.p>
             </div>
-            <div className="flex flex-col gap-4 ml-24 mt-8">
+            <div className="flex flex-col gap-4 lg:ml-24 mt-8 ">
               <motion.p
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, ease: 'easeOut', delay: 1.2 }}
                 viewport={{ once: true, margin: '-50px' }}
-                className="text-lg"
+                className="lg:text-lg text-sm max-lg:opacity-70"
               >
                 OUR DEDICATED SERVICES PROMOTES THE RESPONSIBLE AND
-                <br />
+                <br className="max-lg:hidden" />
                 PROGRESSIVE ADOPTION OF AI, ENSURING IT IS DONE ETHICALLY.
               </motion.p>
               <div className="flex flex-row gap-6">
@@ -133,9 +133,9 @@ function Hero() {
                   whileTap={{ scale: 0.95 }}
                   transition={{ duration: 0.5, ease: 'easeOut', delay: 1.4 }}
                   viewport={{ once: true, margin: '-50px' }}
-                  className="border border-foreground text-foreground px-6 py-3 rounded-full cursor-pointer  hover:scale-105 transition-all duration-300 ease-in-out w-fit font-thin text-xl"
+                  className="border max-lg:text-sm border-foreground text-foreground px-6 py-3 rounded-full cursor-pointer  hover:scale-105 transition-all duration-300 ease-in-out w-fit font-thin text-xl"
                 >
-                  Learn more
+                  Learn more <span className="max-lg:hidden">→</span>
                 </motion.button>
                 <motion.button
                   initial={{ opacity: 0, y: 20 }}
@@ -144,17 +144,17 @@ function Hero() {
                   whileTap={{ scale: 0.95 }}
                   transition={{ duration: 0.5, ease: 'easeOut', delay: 1.5 }}
                   viewport={{ once: true, margin: '-50px' }}
-                  className="bg-foreground text-background px-6 py-3 rounded-full cursor-pointer hover:scale-105 transition-all duration-300 ease-in-out w-fit font-thin text-xl"
+                  className="bg-foreground text-background px-6 py-3 rounded-full cursor-pointer hover:scale-105 transition-all duration-300 ease-in-out w-fit font-thin text-xl max-lg:text-sm"
                 >
-                  Book a call
+                  Book a call <span className="max-lg:hidden">→</span>
                 </motion.button>
               </div>
             </div>
           </div>
           <img src="hero-cut.png" alt="hero" className="max-w-[700px] w-full" />
         </div>
-        <div className="flex flex-row justify-between gap-32 px-12">
-          <div className="flex flex-row gap-12 items-center justify-center">
+        <div className="flex flex-row max-lg:hidden justify-between gap-32 px-12">
+          <div className="flex flex-row  gap-12 items-center justify-center">
             <img
               src="/mockups/branding.png"
               alt="mock"
