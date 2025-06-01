@@ -10,56 +10,56 @@ const FAQ = () => {
       id: 1,
       question: 'How long does it take to build a web application?',
       answer:
-        'Timeline varies based on complexity. Simple landing pages take 1-2 weeks, while full-stack applications typically require 6-12 weeks. We provide detailed timelines during our initial consultation and keep you updated throughout the process.',
+        'Timeline varies based on complexity. Simple landing pages take 1–2 weeks, while full-stack applications typically require 6–12 weeks. We provide detailed timelines during your initial consultation and keep you updated throughout the process.',
       color: '#5DDFDE',
     },
     {
       id: 2,
       question: 'Do you provide ongoing support after launch?',
       answer:
-        'Absolutely! All our packages include post-launch support. We offer bug fixes, performance monitoring, security updates, and feature enhancements. Our support periods range from 1-6 months depending on your chosen package.',
+        'Yes! All plans include post-launch support. You can also extend support as needed through a custom retainer.',
       color: '#5479E0',
     },
     {
       id: 3,
       question: 'Can you work with our existing design team?',
       answer:
-        'Yes, we love collaborating! We can work with your designers, follow your brand guidelines, or provide complete design services. Our development team is experienced in translating designs from Figma, Sketch, Adobe XD, and other design tools.',
+        'Absolutely. We collaborate smoothly with in-house or third-party designers to implement or extend your design vision.',
       color: '#F74460',
     },
     {
       id: 4,
       question: 'What technologies do you use?',
       answer:
-        'We use modern, scalable technologies including React, Next.js, Node.js, Python, TypeScript, PostgreSQL, MongoDB, and cloud platforms like AWS and Vercel. We choose the tech stack based on your specific needs and requirements.',
+        'We use modern, scalable tech including React, Next.js, Flutter, Supabase, Firebase, Node.js, and OpenAI — customized per project.',
       color: '#FB7F34',
     },
     {
       id: 5,
       question: 'Do you handle mobile app development?',
       answer:
-        'Yes! We develop both native (iOS/Android) and cross-platform mobile apps using React Native, Flutter, and Swift/Kotlin. We can also create Progressive Web Apps (PWAs) that work seamlessly across all devices.',
+        'Yes. We build cross-platform mobile apps using Flutter or React Native, and can also deliver native features as needed.',
       color: '#5DDFDE',
     },
     {
       id: 6,
       question: 'How do you handle project communication?',
       answer:
-        'We believe in transparent communication. You get access to a dedicated project manager, weekly progress updates, a shared Slack channel, and regular demo sessions. We use modern project management tools to keep everything organized.',
+        'We use Slack for async updates, Notion for documentation, and Loom or live calls for demos and feedback loops. Transparent and flexible communication is our default.',
       color: '#5479E0',
     },
     {
       id: 7,
       question: 'What if I need changes during development?',
       answer:
-        'Change requests are normal! We include a reasonable number of revisions in our packages. For larger scope changes, we discuss the impact on timeline and budget upfront, ensuring complete transparency.',
+        'We work iteratively. You’ll have checkpoints where you can provide feedback and request changes — no surprise handoffs.',
       color: '#F74460',
     },
     {
       id: 8,
       question: 'Do you help with deployment and hosting?',
       answer:
-        'Absolutely! We handle the entire deployment process, set up hosting on reliable platforms, configure domains, SSL certificates, and provide ongoing infrastructure support. Your app goes live hassle-free.',
+        'Yes. We handle DevOps and can deploy your product on Vercel, Render, Railway, or any platform you prefer. CI/CD included.',
       color: '#FB7F34',
     },
   ]

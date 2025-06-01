@@ -68,51 +68,35 @@ const TestimonialGrid = () => {
   const testimonials = [
     {
       id: 1,
-      person: 'Priya Malhotra',
+      person: 'Nadia P',
       position: 'Project Manager',
       title:
-        'We came in with a vague idea. They turned it into a scalable product that users actually love. I don’t know how they did it, but we’re booking meetings thanks to the tech they built.',
+        'We came in with a vague idea. Prodlabs turned it into a product our users actually love.',
       size: 'large',
     },
     {
       id: 2,
-      person: 'Liam Tran',
+      person: 'Liam T',
       position: 'CTO',
       title:
-        'Deadlines met. Bugs squashed. Features shipped. That’s all we wanted — and that’s exactly what we got.',
+        'Deadlines met. Bugs squashed. Features shipped. That’s all we wanted — and got.',
       size: 'normal',
     },
     {
       id: 3,
-      person: 'David',
+      person: 'Igor',
       position: 'Co-Founder',
       title:
-        'They felt like part of our in-house team. Super responsive, no fluff, and they just got what we needed — even when we were figuring it out ourselves.',
+        'They felt like an in-house team. Super responsive. No fluff. Just results.',
       size: 'normal',
     },
+
     {
       id: 4,
-      person: 'Ananya Iyer',
-      position: 'CEO',
-      title:
-        'It’s rare to find a tech partner that blends creativity, speed, and pure technical firepower like this. They’ve become our secret weapon',
-      size: 'large',
-      image: 'testimonials/ananya.png',
-    },
-    {
-      id: 5,
-      person: 'Kabhir Sharma',
+      person: 'Kabhir S.',
       position: 'Tech Lead',
       title:
-        'Hiring them was the smartest decision we made all year. They took our spaghetti code and turned it into clean, maintainable magic. Absolute legends',
-      size: 'normal',
-    },
-    {
-      id: 6,
-      person: 'Jatin Mehra',
-      position: 'Operations Lead',
-      title:
-        'Our previous dev team ghosted us. These folks rescued our codebase, optimized everything, and delivered ahead of schedule. Never looking back.',
+        'They took our spaghetti code and turned it into maintainable magic. Absolute legends.',
       size: 'normal',
     },
   ]
@@ -170,8 +154,7 @@ const TestimonialGrid = () => {
             Let&apos;s craft something marvelous.
           </h1>
           <p className="lg:text-base text-sm max-w-xl">
-            Why waste time and money on a mediocre product when you can have a
-            great one with us?
+          Why waste time and money on a mediocre product when you can have a great one with us?
           </p>
           <motion.button
             className="w-fit lg:mt-12 mt-6 bg-foreground lg:text-xl text-base text-background border-6 border-background font-semibold cursor-pointer lg:px-8 lg:py-4 max-lg:px-6 max-lg:py-3 rounded-full whitespace-nowrap"
@@ -187,7 +170,6 @@ const TestimonialGrid = () => {
           className="max-lg:hidden lg:h-[300px] rounded-2xl"
         />
       </div>
-
     </section>
   )
 }

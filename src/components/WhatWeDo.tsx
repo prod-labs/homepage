@@ -31,7 +31,6 @@ export default function WhatWeDo() {
         style={{}}
       >
         <h1 className="text-2xl md:text-4xl lg:text-[64px] font-semibold relative z-10">
-          Move at{' '}
           <motion.span
             initial={{ y: -50, opacity: 1, rotate: -5 }}
             whileInView={{
@@ -48,10 +47,10 @@ export default function WhatWeDo() {
           >
             <BsLightningChargeFill className="inline-block text-orange" />
           </motion.span>{' '}
-          <span className="underline">lightning</span> speed.
+          Our process.
         </h1>
 
-        <p className="relative z-10">We move fast, build lean and Validate.</p>
+        <p className="relative z-10">Move fast, build smart.</p>
 
         <div className="mt-16 md:mt-24 space-y-12 md:space-y-8 flex items-center justify-center w-full flex-col relative py-16 md:py-32 z-10">
           <div className="lg:flex flex-col gap-6 border-l border-white/10 h-full absolute translate-x-1/2 hidden md:flex" />
@@ -74,8 +73,9 @@ export default function WhatWeDo() {
                 <FaFlask className="inline-block text-red" /> Research
               </h2>
               <p className="text-foreground/70 text-sm md:text-base">
-                We conduct thorough research to understand the needs of our
-                clients and the market.
+                Our research process digs deep into user behavior, market
+                trends, and competitive landscapes to make sure we’re solving
+                the right problems.
               </p>
             </div>
             <div className="w-full md:w-[600px] lg:w-[700px] h-[200px] md:h-[300px] lg:h-[400px] rounded-3xl overflow-hidden px-4 md:px-0">
@@ -116,8 +116,9 @@ export default function WhatWeDo() {
                 <MdDesignServices className="inline-block text-orange" /> Design
               </h2>
               <p className="text-foreground/70 text-sm md:text-base">
-                We create beautiful, functional designs that are easy to use and
-                navigate.
+                We craft intuitive UI/UX that blends clarity, usability, and
+                brand identity. Everything is prototyped in Figma and tested
+                with real users.
               </p>
             </div>
             <div className="w-full md:w-[600px] lg:w-[700px] h-[200px] md:h-[300px] lg:h-[400px] rounded-3xl overflow-hidden px-4 md:px-0">
@@ -158,8 +159,9 @@ export default function WhatWeDo() {
                 <FaCode className="inline-block text-blue" /> Develop
               </h2>
               <p className="text-foreground/70 text-sm md:text-base">
-                We develop high-quality, scalable code that meets your business
-                needs.
+                We write scalable, maintainable code using modern tech stacks —
+                whether it’s a full-stack app, an AI-powered tool, or a
+                blazing-fast website.
               </p>
             </div>
             <div className="w-full md:w-[600px] lg:w-[700px] h-[200px] md:h-[300px] lg:h-[400px] rounded-3xl overflow-hidden px-4 md:px-0">
@@ -200,8 +202,7 @@ export default function WhatWeDo() {
                 <RiTestTubeFill className="inline-block text-cyan" /> Testing
               </h2>
               <p className="text-foreground/70 text-sm md:text-base">
-                We test our code to ensure it is working as expected and meets
-                your business needs while being performant and scalable.
+              From unit testing to performance benchmarks and device testing — we ensure every release is battle-tested and production-ready.
               </p>
             </div>
             <div className="w-full md:w-[600px] lg:w-[700px] h-[200px] md:h-[300px] lg:h-[400px] rounded-3xl overflow-hidden px-4 md:px-0">

@@ -5,29 +5,41 @@ const data = [
   {
     src: '/mockups/web.png',
     title: 'Web Development',
-    category: 'Services',
+    category: 'Web Development',
     content:
-      'We build high-performance, responsive websites that actually convert.',
+      'Custom websites, landing pages, dashboards, and SaaS platforms. Built to perform.',
   },
   {
     src: '/mockups/app.png',
     title: 'App Development',
     category: 'Services',
     content:
-      'From idea to App Store. We craft mobile apps users love to tap on.',
+      'Cross-platform mobile apps using Flutter and React Native — fast, clean, and user-first.',
   },
   {
     src: '/mockups/design.png',
     title: 'UI Designing',
     category: 'Services',
     content:
-      'Sleek, modern, and user-obsessed — our interfaces feel like magic.',
+      'Research-driven design with pixel-perfect execution. We design for real users, not just Dribbble likes.',
   },
   {
     src: '/mockups/branding.png',
     title: 'Branding',
     category: 'Services',
-    content: "We don't just make logos — we create identities that stick.",
+    content: "From logos and typography to entire identity systems — we help you look the part and stand out.",
+  },
+  {
+    src: '/mockups/branding.png',
+    title: 'MVP Builds',
+    category: 'Services',
+    content: "Validate fast with clickable prototypes or V1 builds that get your idea into the hands of early users.",
+  },
+  {
+    src: '/mockups/branding.png',
+    title: 'AI Integration',
+    category: 'Services',
+    content: "Add smart features to your product using LLMs, embeddings, chatbots, or task automation.",
   },
 ]
 
@@ -46,8 +58,7 @@ export default function Services() {
           Services
         </h1>
         <p className="opacity-70 text-sm md:text-base lg:text-lg">
-          We are a team of developers who are passionate about creating the best
-          products for our clients.
+        Everything you need to launch and grow a digital product — in one studio.
         </p>
       </div>
       <Carousel items={cards} />

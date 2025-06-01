@@ -120,8 +120,8 @@ const Pricing = () => {
             Simple, <i className="underline">transparent</i> pricing
           </h1>
           <p className="opacity-70 text-sm md:text-base lg:text-lg max-w-2xl">
-            Choose the perfect plan for your project. No hidden fees, no
-            surprises. Just exceptional development at transparent prices.
+          Choose the perfect plan for your project.
+          No hidden fees. No surprises. Just exceptional development at transparent prices.
           </p>
 
           <motion.div

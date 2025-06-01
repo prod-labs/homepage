@@ -22,66 +22,15 @@ function Hero() {
         viewport={{ once: true, margin: '-100px' }}
         className="min-h-screen lg:px-28 lg:pr-12 max-lg:px-12 overflow-hidden relative flex flex-col justify-center gap-24 mb-24"
       >
-        <div className="flex max-lg:flex-col lg:p-12 lg:mt-24 rounded-3xl lg:border-4 border-foreground items-center max-lg:items-start max-lg:justify-end gap-12 lg:justify-between relative hero-gradient-shadow">
-          <motion.div
-            animate={{
-              background: [
-                `linear-gradient(45deg, 
-                  color-mix(in srgb, var(--color-red) 30%, transparent), 
-                  color-mix(in srgb, var(--color-orange) 30%, transparent), 
-                  color-mix(in srgb, var(--color-cyan) 30%, transparent), 
-                  color-mix(in srgb, var(--color-blue) 30%, transparent)
-                )`,
-                `linear-gradient(135deg, 
-                  color-mix(in srgb, var(--color-orange) 30%, transparent), 
-                  color-mix(in srgb, var(--color-cyan) 30%, transparent), 
-                  color-mix(in srgb, var(--color-blue) 30%, transparent), 
-                  color-mix(in srgb, var(--color-red) 30%, transparent)
-                )`,
-                `linear-gradient(225deg, 
-                  color-mix(in srgb, var(--color-cyan) 30%, transparent), 
-                  color-mix(in srgb, var(--color-blue) 30%, transparent), 
-                  color-mix(in srgb, var(--color-red) 30%, transparent), 
-                  color-mix(in srgb, var(--color-orange) 30%, transparent)
-                )`,
-                `linear-gradient(315deg, 
-                  color-mix(in srgb, var(--color-blue) 30%, transparent), 
-                  color-mix(in srgb, var(--color-red) 30%, transparent), 
-                  color-mix(in srgb, var(--color-orange) 30%, transparent), 
-                  color-mix(in srgb, var(--color-cyan) 30%, transparent)
-                )`,
-                `linear-gradient(45deg, 
-                  color-mix(in srgb, var(--color-red) 30%, transparent), 
-                  color-mix(in srgb, var(--color-orange) 30%, transparent), 
-                  color-mix(in srgb, var(--color-cyan) 30%, transparent), 
-                  color-mix(in srgb, var(--color-blue) 30%, transparent)
-                )`,
-              ],
-            }}
-            transition={{
-              duration: 8,
-              repeat: Infinity,
-              ease: 'linear',
-            }}
-            className="absolute max-lg:hidden inset-0 rounded-3xl opacity-20 pointer-events-none"
-            style={{
-              mask: 'linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)',
-              maskComposite: 'xor',
-              WebkitMask:
-                'linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)',
-              WebkitMaskComposite: 'xor',
-              padding: '4px',
-            }}
-          />
-
-          <div className="flex flex-col">
+        <div className="flex flex-col lg:mt-24 items-start max-lg:items-start max-lg:justify-end gap-12 lg:justify-between relative">
+          <div className="flex flex-row justify-between items-center w-full">
             <div className="relative my-4 mb-12">
               <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, ease: 'easeOut', delay: 0.3 }}
                 viewport={{ once: true, margin: '-50px' }}
-                className="text-3xl uppercase flex flex-col lg:text-[72px] font-semibold lg:leading-24"
+                className="text-3xl uppercase flex flex-col lg:text-[52px] font-semibold lg:leading-20"
               >
                 <div>
                   <motion.span
@@ -112,7 +61,7 @@ function Hero() {
                     your
                   </motion.span>
                 </div>
-                <div>
+                <div className="ml-32">
                   <motion.span
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -120,7 +69,7 @@ function Hero() {
                     viewport={{ once: true, margin: '-50px' }}
                     className="inline-block mr-4"
                   >
-                    great
+                    boldest
                   </motion.span>
                   <motion.span
                     initial={{ opacity: 0, y: 20 }}
@@ -132,7 +81,7 @@ function Hero() {
                     ideas
                   </motion.span>
                 </div>
-                <div className="ml-32">
+                <div className="">
                   <motion.span
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -147,9 +96,20 @@ function Hero() {
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, ease: 'easeOut', delay: 1 }}
                     viewport={{ once: true, margin: '-50px' }}
+                    className="inline-block mr-4"
+                  >
+                    impactful
+                  </motion.span>
+                </div>
+                <div className="ml-32">
+                  <motion.span
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5, ease: 'easeOut', delay: 1.1 }}
+                    viewport={{ once: true, margin: '-50px' }}
                     className="inline-block px-7 py-1 rounded-full border border-foreground"
                   >
-                    reality
+                    digital products.
                   </motion.span>
                 </div>
               </motion.div>
@@ -158,7 +118,7 @@ function Hero() {
                 whileInView={{ opacity: 0.7 }}
                 transition={{ duration: 0.6, ease: 'easeOut', delay: 0.6 }}
                 viewport={{ once: true, margin: '-50px' }}
-                className="font-heading absolute text-blue right-12 text-lg max-lg:bottom-20 bottom-30 leading-4"
+                className="font-heading absolute text-blue right-32 text-lg max-lg:bottom-20 bottom-30 leading-4"
               >
                 TOP RATED
                 <br />
@@ -176,45 +136,52 @@ function Hero() {
                 QUALITY
               </motion.p>
             </div>
-            <div className="flex flex-col gap-4 lg:ml-24 mt-8 ">
-              <motion.p
+
+            <img
+              src="hero-cut.png"
+              alt="hero"
+              className="max-w-[650px] w-full"
+            />
+          </div>
+          <div className="flex flex-col gap-4 lg:ml-24 mt-8 ">
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, ease: 'easeOut', delay: 1.2 }}
+              viewport={{ once: true, margin: '-50px' }}
+              className="lg:text-lg text-sm max-lg:opacity-70"
+            >
+              Whether you're validating an MVP, scaling a feature-rich product,
+              or
+              <br />
+              revamping your design system we're your tech partner for the
+              journey.
+            </motion.p>
+            <div className="flex flex-row gap-6">
+              <motion.button
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, ease: 'easeOut', delay: 1.2 }}
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                transition={{ duration: 0.5, ease: 'easeOut', delay: 1.4 }}
                 viewport={{ once: true, margin: '-50px' }}
-                className="lg:text-lg text-sm max-lg:opacity-70"
+                className="border max-lg:text-sm border-foreground text-foreground px-6 py-3 rounded-full cursor-pointer  hover:scale-105 transition-all duration-300 ease-in-out w-fit font-thin text-xl"
               >
-                OUR DEDICATED SERVICES PROMOTES THE RESPONSIBLE AND
-                <br className="max-lg:hidden" />
-                PROGRESSIVE ADOPTION OF AI, ENSURING IT IS DONE ETHICALLY.
-              </motion.p>
-              <div className="flex flex-row gap-6">
-                <motion.button
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  transition={{ duration: 0.5, ease: 'easeOut', delay: 1.4 }}
-                  viewport={{ once: true, margin: '-50px' }}
-                  className="border max-lg:text-sm border-foreground text-foreground px-6 py-3 rounded-full cursor-pointer  hover:scale-105 transition-all duration-300 ease-in-out w-fit font-thin text-xl"
-                >
-                  Learn more <span className="max-lg:hidden">→</span>
-                </motion.button>
-                <motion.button
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  transition={{ duration: 0.5, ease: 'easeOut', delay: 1.5 }}
-                  viewport={{ once: true, margin: '-50px' }}
-                  className="bg-foreground text-background px-6 py-3 rounded-full cursor-pointer hover:scale-105 transition-all duration-300 ease-in-out w-fit font-thin text-xl max-lg:text-sm"
-                >
-                  Book a call <span className="max-lg:hidden">→</span>
-                </motion.button>
-              </div>
+                View Our Work <span className="max-lg:hidden">→</span>
+              </motion.button>
+              <motion.button
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                transition={{ duration: 0.5, ease: 'easeOut', delay: 1.5 }}
+                viewport={{ once: true, margin: '-50px' }}
+                className="bg-foreground text-background px-6 py-3 rounded-full cursor-pointer hover:scale-105 transition-all duration-300 ease-in-out w-fit font-thin text-xl max-lg:text-sm"
+              >
+                Book a call <span className="max-lg:hidden">→</span>
+              </motion.button>
             </div>
           </div>
-          <img src="hero-cut.png" alt="hero" className="max-w-[700px] w-full" />
         </div>
         <div className="flex flex-row max-lg:hidden justify-between gap-32 px-12">
           <div className="flex flex-row  gap-12 items-center justify-center">
@@ -227,11 +194,12 @@ function Hero() {
           </div>
           <div className="rounded-3xl px-8 py-4 flex justify-center gap-2 flex-col min-w-[250px]  bg-foreground/20 text-foreground">
             <h2 className="text-4xl font-bold">17k+</h2>
-            <p className="text-lg">Customers</p>
+            <p className="text-lg">users served</p>
           </div>
           <p className="max-w-[300px]">
-            We build full-stack web and mobile apps that go live fast. You can
-            test, earn, and grow before anyone catches up.
+            At Prodlabs, we help startups and teams design, build, and launch
+            web & mobile products — fast. Our approach is lean, agile, and built
+            for scale.
           </p>
         </div>
       </motion.section>
