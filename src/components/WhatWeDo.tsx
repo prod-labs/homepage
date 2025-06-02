@@ -27,7 +27,7 @@ export default function WhatWeDo() {
       </div>
       <section
         id="why"
-        className="min-h-screen lg:px-28 md:px-16 px-6 flex flex-col items-start py-10 md:py-18 pt-10 relative overflow-hidden"
+        className="min-h-screen lg:px-28 md:px-16 px-6 flex flex-col items-start py-10 md:py-18 pt-0 relative overflow-hidden"
         style={{}}
       >
         <h1 className="text-2xl md:text-4xl lg:text-[64px] font-semibold relative z-10">
@@ -52,8 +52,7 @@ export default function WhatWeDo() {
 
         <p className="relative z-10">Move fast, build smart.</p>
 
-        <div className="mt-16 md:mt-24 space-y-12 md:space-y-8 flex items-center justify-center w-full flex-col relative py-16 md:py-32 z-10">
-          <div className="lg:flex flex-col gap-6 border-l border-white/10 h-full absolute translate-x-1/2 hidden md:flex" />
+        <div className="mt-16 md:mt-0 space-y-12 md:space-y-8 flex items-center justify-center w-full flex-col relative py-16 md:py-32 md:pt-6 z-10">
           <motion.div
             initial={{ scale: 0.7 }}
             whileInView={{ scale: 1 }}
@@ -66,9 +65,9 @@ export default function WhatWeDo() {
               once: false,
               amount: 0.9,
             }}
-            className="flex flex-col items-center gap-6 ackground z-10 h-fit p-2 py-4 w-full"
+            className="flex flex-col lg:flex-row justify-between items-center gap-6 z-10 h-fit p-2 py-4 w-full"
           >
-            <div className="flex flex-col items-start md:items-start gap-2 max-w-xl w-full px-4">
+            <div className="flex flex-col  items-start md:items-start gap-2 max-w-xl w-full px-4">
               <h2 className="font-semibold text-2xl md:text-3xl flex items-center gap-2">
                 <FaFlask className="inline-block text-red" /> Research
               </h2>
@@ -109,7 +108,7 @@ export default function WhatWeDo() {
               once: false,
               amount: 0.9,
             }}
-            className="flex flex-col items-center gap-6 ackground z-10 h-fit p-2 py-4 w-full"
+            className="flex flex-col lg:flex-row-reverse justify-between items-center gap-6  z-10 h-fit p-2 py-4 w-full"
           >
             <div className="flex flex-col items-start md:items-start gap-2 max-w-xl w-full px-4">
               <h2 className="font-semibold text-2xl md:text-3xl flex items-center gap-2">
@@ -152,7 +151,7 @@ export default function WhatWeDo() {
               once: false,
               amount: 0.9,
             }}
-            className="flex flex-col items-center gap-6 ackground z-10 h-fit p-2 py-4 w-full"
+            className="flex flex-col lg:flex-row justify-between items-center gap-6  z-10 h-fit p-2 py-4 w-full"
           >
             <div className="flex flex-col items-start md:items-start gap-2 max-w-xl w-full px-4">
               <h2 className="font-semibold text-2xl md:text-3xl flex items-center gap-2">
@@ -195,14 +194,15 @@ export default function WhatWeDo() {
               once: false,
               amount: 0.9,
             }}
-            className="flex flex-col items-center gap-6 ackground z-10 h-fit p-2 py-4 w-full"
+            className="flex flex-col lg:flex-row-reverse justify-between items-center gap-6  z-10 h-fit p-2 py-4 w-full"
           >
             <div className="flex flex-col items-start md:items-start gap-2 max-w-xl w-full px-4">
               <h2 className="font-semibold text-2xl md:text-3xl flex items-center gap-2">
                 <RiTestTubeFill className="inline-block text-cyan" /> Testing
               </h2>
               <p className="text-foreground/70 text-sm md:text-base">
-              From unit testing to performance benchmarks and device testing — we ensure every release is battle-tested and production-ready.
+                From unit testing to performance benchmarks and device testing —
+                we ensure every release is battle-tested and production-ready.
               </p>
             </div>
             <div className="w-full md:w-[600px] lg:w-[700px] h-[200px] md:h-[300px] lg:h-[400px] rounded-3xl overflow-hidden px-4 md:px-0">

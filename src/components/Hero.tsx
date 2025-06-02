@@ -20,17 +20,17 @@ function Hero() {
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.8, ease: 'easeOut', delay: 0.2 }}
         viewport={{ once: true, margin: '-100px' }}
-        className="min-h-screen lg:px-28 lg:pr-12 max-lg:px-12 overflow-hidden relative flex flex-col justify-center gap-24 mb-24"
+        className="min-h-screen lg:px-28 lg:pr-12 max-lg:px-8 overflow-hidden relative flex flex-col justify-center gap-24 mb-24"
       >
         <div className="flex flex-col lg:mt-24 items-start max-lg:items-start max-lg:justify-end gap-12 lg:justify-between relative">
-          <div className="flex flex-row justify-between items-center w-full">
+          <div className="flex lg:flex-row flex-col justify-between items-center w-full">
             <div className="relative my-4 mb-12">
               <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, ease: 'easeOut', delay: 0.3 }}
                 viewport={{ once: true, margin: '-50px' }}
-                className="text-3xl uppercase flex flex-col lg:text-[52px] font-semibold lg:leading-20"
+                className="text-3xl uppercase flex flex-col leading-10 lg:text-[52px] font-semibold lg:leading-20"
               >
                 <div>
                   <motion.span
@@ -61,7 +61,7 @@ function Hero() {
                     your
                   </motion.span>
                 </div>
-                <div className="ml-32">
+                <div className="lg:ml-32 ml-12">
                   <motion.span
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -101,13 +101,13 @@ function Hero() {
                     impactful
                   </motion.span>
                 </div>
-                <div className="ml-32">
+                <div className="lg:ml-32">
                   <motion.span
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, ease: 'easeOut', delay: 1.1 }}
                     viewport={{ once: true, margin: '-50px' }}
-                    className="inline-block px-7 py-1 rounded-full border border-foreground"
+                    className="inline-block lg:px-7 px-4 py-1 rounded-full border border-foreground"
                   >
                     digital products.
                   </motion.span>
@@ -118,7 +118,7 @@ function Hero() {
                 whileInView={{ opacity: 0.7 }}
                 transition={{ duration: 0.6, ease: 'easeOut', delay: 0.6 }}
                 viewport={{ once: true, margin: '-50px' }}
-                className="font-heading absolute text-blue right-32 text-lg max-lg:bottom-20 bottom-30 leading-4"
+                className="font-heading absolute max-lg:hidden text-blue right-32 text-lg max-lg:bottom-20 bottom-30 leading-4"
               >
                 TOP RATED
                 <br />
@@ -129,7 +129,7 @@ function Hero() {
                 whileInView={{ opacity: 0.7 }}
                 transition={{ duration: 0.6, ease: 'easeOut', delay: 0.8 }}
                 viewport={{ once: true, margin: '-50px' }}
-                className="font-heading text-orange absolute left-12 max-lg:bottom-0 text-lg bottom-6 leading-4"
+                className="font-heading text-orange absolute max-lg:hidden lg:left-12 left-0 max-lg:bottom-0 text-lg lg:bottom-6 bottom-6 leading-4"
               >
                 PREMIUM
                 <br />

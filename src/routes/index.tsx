@@ -17,7 +17,7 @@ function App() {
     <main className="bg-background text-foreground overflow-x-hidden min-h-[200vh]">
       <Hero />
       <WhatWeDo />
-      {/* <Panel /> */}
+      <Panel />
       <Services />
       <Testimonials />
       <Pricing />
